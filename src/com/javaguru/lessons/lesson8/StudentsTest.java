@@ -7,36 +7,39 @@ public class StudentsTest {
         MiddleDeveloper middleDeveloper = new MiddleDeveloper();
         SeniorDeveloper seniorDeveloper = new SeniorDeveloper();
 
-        System.out.println("STUDENT:");
-        student.study();
         System.out.println("JUNIOR:");
         juniorDeveloper.readSpecification();
         juniorDeveloper.writeCode();
         juniorDeveloper.study();
+        System.out.println();
+
         System.out.println("MIDDLE:");
         middleDeveloper.readSpecification();
         middleDeveloper.writeCode();
         middleDeveloper.study();
         middleDeveloper.codeReview();
+        System.out.println();
+
         System.out.println("SENIOR:");
-        seniorDeveloper.readSpecification();
         seniorDeveloper.writeCode();
+        seniorDeveloper.readSpecification();
         seniorDeveloper.study();
         seniorDeveloper.codeReview();
         seniorDeveloper.solveProblems();
 
-        JuniorDeveloper[] JuniorDevelopers = new JuniorDeveloper[4];
-        JuniorDevelopers[0] = middleDeveloper;
-        JuniorDevelopers[1] = seniorDeveloper;
-        JuniorDevelopers[2] = juniorDeveloper;
+        JuniorDeveloper[] juniorDevelopers = new JuniorDeveloper[3];
+        juniorDevelopers[0] = juniorDeveloper;
+        juniorDevelopers[1] = middleDeveloper;
+        juniorDevelopers[2] = seniorDeveloper;
 
         System.out.println();
-
-        for (JuniorDeveloper developer : JuniorDevelopers) {
+        for (JuniorDeveloper developer : juniorDevelopers) {
             developer.study();
             developer.writeCode();
             developer.readSpecification();
         }
+
+        System.out.println();
 
         Student[] students = {
                 student,
@@ -47,9 +50,7 @@ public class StudentsTest {
 
         for(Student st : students) {
             st.study();
-
         }
-
     }
 }
 
