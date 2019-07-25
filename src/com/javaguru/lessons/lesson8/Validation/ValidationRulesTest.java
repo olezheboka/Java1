@@ -1,4 +1,4 @@
-package com.javaguru.lessons.lesson8.validation;
+package com.javaguru.lessons.lesson8.Validation;
 
 class ValidationRulesTest {
 
