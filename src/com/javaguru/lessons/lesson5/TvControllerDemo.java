@@ -3,23 +3,23 @@ package com.javaguru.lessons.lesson5;
 public class TvControllerDemo {
 
     public static void main(String[] args) {
-        Tv televizor = new Tv();
-        televizor.setCurrentChannel(1);
-        televizor.setCurrentVolume(50);
-        televizor.setTvIsOn(false);
-        televizor.setManufacturer("Sony");
+        Tv tv = new Tv();
+        tv.setCurrentChannel(1);
+        tv.setCurrentVolume(50);
+        tv.setTvIsOn(false);
+        tv.setManufacturer("Sony");
 
-        TvController puljt = new TvController();
-        puljt.setTv(televizor);
-        puljt.connectControllerToTv();
+        TvController tvController = new TvController();
+        tvController.setTv(tv);
+        tvController.connectControllerToTv();
 
-        System.out.println(televizor);
+        System.out.println(tv);
 
-        puljt.turnTvOn();
-        puljt.nextChannel();
-        puljt.increaseVolume();
+        tvController.turnTvOn();
+        tvController.nextChannel();
+        tvController.increaseVolume();
 
-        System.out.println(televizor);
+        System.out.println(tv);
 
     }
 
