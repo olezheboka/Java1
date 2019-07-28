@@ -5,6 +5,10 @@ import java.util.Arrays;
 public class Palindrome {
 
     boolean isPalindrome(String text) {
+
+        text = text.replaceAll("[^a-zA-Z0-9]", "");
+        text = text.toLowerCase();
+
         char[] myArray = text.toCharArray();
         int size = myArray.length;
         char[] copy = Arrays.copyOf(myArray, myArray.length);
