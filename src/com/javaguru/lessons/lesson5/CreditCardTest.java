@@ -19,7 +19,7 @@ public class CreditCardTest {
         System.out.println("set limit to 75000");
         myCard.setCreditLimit(7500);
         System.out.println("withdraw 5000");
-        myCard.withdraw(5000,"1234");
+        myCard.withdraw(5000, "1234");
 
         System.out.println("withdraw 2355334");
         myCard.withdraw(2355334, "1234");

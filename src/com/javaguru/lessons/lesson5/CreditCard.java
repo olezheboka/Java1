@@ -26,7 +26,7 @@ public class CreditCard {
             balance = 0;
             System.out.println(toString());
         } else if (enteredPinCode.equals(pinCode)) {
-            System.out.println("Credit limit exceeded " + "\n" +toString());
+            System.out.println("Credit limit exceeded " + "\n" + toString());
         } else {
             System.out.println("Declined: Incorrect PIN code");
         }
@@ -35,7 +35,6 @@ public class CreditCard {
     private boolean isCreditLimitEnough(int withdrawalAmount) {
         return creditLimit >= debt + withdrawalAmount - balance;
     }
-
 
 
     public void deposit(int depositAmount, String enteredPinCode) {
