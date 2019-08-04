@@ -1,7 +1,5 @@
 package com.javaguru.lessons.lesson7;
 
-import java.util.Arrays;
-
 public class PalindromeTest {
     public static void main(String[] args) {
         PalindromeTest testRunner = new PalindromeTest();
