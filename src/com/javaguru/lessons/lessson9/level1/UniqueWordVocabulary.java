@@ -1,4 +1,4 @@
-package com.javaguru.lessons.lessson9;
+package com.javaguru.lessons.lessson9.level1;
 
 import java.util.HashSet;
 import java.util.Set;

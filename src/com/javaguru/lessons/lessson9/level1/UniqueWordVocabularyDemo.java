@@ -1,4 +1,4 @@
-package com.javaguru.lessons.lessson9;
+package com.javaguru.lessons.lessson9.level1;
 
 public class UniqueWordVocabularyDemo {
 
