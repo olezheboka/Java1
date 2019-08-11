@@ -30,7 +30,7 @@ public class UniqueWordCounter {
                 mostFrequentWord = word;
             }
         }
-        System.out.println("Most frequently used word is " + mostFrequentWord + ", It was used " + numberOfTimesAdded + " times");
+        System.out.println("Most frequently used word is " + mostFrequentWord + ". It was used " + numberOfTimesAdded + " times");
         return numberOfTimesAdded;
     }
 
