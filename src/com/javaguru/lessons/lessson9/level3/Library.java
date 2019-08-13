@@ -1,36 +1,39 @@
 package com.javaguru.lessons.lessson9.level3;
 
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Library {
 
-    private Set<Book> books = new HashSet<>();
+    List<Book> books = new ArrayList<>();
 
     void addBook(Book newBook) {
         books.add(newBook);
     }
 
-    void removeBook(Book bookToDelete) {
+    void deleteBook(Book bookToDelete) {
         books.remove(bookToDelete);
     }
 
-    void findByName(Book newBook) {
-        if (books.contains(newBook)) {
-            System.out.println(newBook);
+    void findByName(String name) {
+        for (Book book : books) {
+
+            String currentBookName = book.getName();
+            if (currentBookName == name) {
+                System.out.println(book);
+                break;
+            }
         }
     }
 
-    void findByAuthor(Book bookToGetAuthorFrom) {
 
-
-        String initialAuthor = bookToGetAuthorFrom.getAuthor();
+    void findByAuthor(String author) {
 
         for (Book book : books) {
 
             String currentBookAuthor = book.getAuthor();
-            if (currentBookAuthor == initialAuthor) {
+            if (currentBookAuthor == author) {
                 System.out.println(book);
             }
         }
