@@ -1,4 +1,4 @@
-package com.javaguru.lessons.lessson9.level3;
+package com.javaguru.lessons.lessson9.homework.level3;
 
 public class LibraryDemo {
 
