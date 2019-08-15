@@ -1,6 +1,8 @@
 package com.javaguru.lessons.lessson9.homework.level4;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ShopDemo {
 
@@ -23,8 +25,11 @@ public class ShopDemo {
 
         System.out.println(shop);
 
-        shop.findProductByName("Apple");
-        shop.findProductInRange(new BigDecimal("300.00"), new BigDecimal("76500.00"));
+        Product productsFoundByName = shop.findProductByName("Apple");
+        System.out.println(productsFoundByName);
+
+        List<Product> productsFoundInRange = shop.findProductInRange(new BigDecimal("300.00"), new BigDecimal("76500.00"));
+        System.out.println(productsFoundInRange);
 
     }
 

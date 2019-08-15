@@ -18,29 +18,29 @@ public class Library {
 
     Book findByName(String name) {
 
+        Book bookFoundByName = books.get(0);
+
         for (Book book : books) {
             String currentBookName = book.getName();
             if (currentBookName == name) {
-                System.out.println("Book found by " + name + " is: " + book);
-                return book;
+                bookFoundByName = book;
             }
         }
-        return null;
+        return bookFoundByName;
     }
 
 
-    Book findByAuthor(String author) {
+    List<Book> findByAuthor(String author) {
 
-        Book bookFoundByAuthor = books.get(0);
+        List<Book> booksFoundByAuthor = new ArrayList<>();
 
         for (Book book : books) {
             String currentBookAuthor = book.getAuthor();
             if (currentBookAuthor == author) {
-                bookFoundByAuthor = book;
-                System.out.println("Book found by " + author + " is: " + book);
+                booksFoundByAuthor.add(book);
             }
         }
-        return bookFoundByAuthor;
+        return booksFoundByAuthor;
 
     }
 

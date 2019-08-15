@@ -1,5 +1,7 @@
 package com.javaguru.lessons.lessson9.homework.level3;
 
+import java.util.List;
+
 public class LibraryDemo {
 
     public static void main(String[] args) {
@@ -14,8 +16,11 @@ public class LibraryDemo {
 
         System.out.println(library);
 
-        library.findByName("War and Peace");
-        library.findByAuthor("Leo Tolstoy");
+        Book productFoundByName = library.findByName("War and Peace");
+        System.out.println(productFoundByName);
+
+        List<Book> productsFoundByAuthor = library.findByAuthor("Leo Tolstoy");
+        System.out.println(productsFoundByAuthor);
 
         library.deleteBook(bookTwo);
 

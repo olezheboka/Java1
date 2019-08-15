@@ -19,29 +19,29 @@ public class Shop {
     }
 
     Product findProductByName(String name) {
-        for (Product product : shop) {
 
+        Product productFoundByName = shop.get(0);
+
+        for (Product product : shop) {
             String currentProductName = product.getName();
             if (currentProductName == name) {
-                System.out.println("Product found by " + name + " is: " + product);
-                return product;
+                productFoundByName = product;
             }
         }
-        return null;
+        return productFoundByName;
     }
 
-    Product findProductInRange(BigDecimal minPriceRange, BigDecimal maxPriceRange) {
+    List<Product> findProductInRange(BigDecimal minPriceRange, BigDecimal maxPriceRange) {
 
-        Product foundProductInRange = shop.get(0);
+        List<Product> productsFoundInRange = new ArrayList<>();
 
         for (Product product : shop) {
             BigDecimal currentProductPrice = product.getPrice();
             if (currentProductPrice.compareTo(minPriceRange) > 0 && currentProductPrice.compareTo(maxPriceRange) < 0) {
-                foundProductInRange = product;
-                System.out.println("Product found in range from " + minPriceRange + " to: " + maxPriceRange + " is: " + product);
+                productsFoundInRange.add(product);
             }
         }
-        return foundProductInRange;
+        return productsFoundInRange;
     }
 
 

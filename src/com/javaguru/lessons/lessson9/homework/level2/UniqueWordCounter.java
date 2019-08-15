@@ -35,7 +35,7 @@ public class UniqueWordCounter {
     }
 
     void printWordsFrequency() {
-        System.out.println(words);
+        System.out.println("Words frequency: " + words);
     }
 
     @Override
