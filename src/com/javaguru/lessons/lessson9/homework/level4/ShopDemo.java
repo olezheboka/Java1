@@ -1,7 +1,6 @@
 package com.javaguru.lessons.lessson9.homework.level4;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ShopDemo {
