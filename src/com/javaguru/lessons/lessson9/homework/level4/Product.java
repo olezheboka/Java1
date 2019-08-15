@@ -6,7 +6,7 @@ import java.util.Objects;
 public class Product {
 
     private String name;
-    BigDecimal price = new BigDecimal("00.00");
+    private BigDecimal price;
 
     public Product(String name, BigDecimal price) {
         this.name = name;
