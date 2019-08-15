@@ -1,7 +1,5 @@
 package com.javaguru.lessons.lesson4;
 
-import com.javaguru.lessons.lesson3.Human;
-
 public class HumanAgeClassifierTest {
 
     public static void main(String[] args) {
@@ -47,10 +45,10 @@ public class HumanAgeClassifierTest {
 
     void printCheckResult(String actualResult, String expectedResult, String testName) {
         if (expectedResult.equals(actualResult)) {
-            System.out.println("shouldClassifyIncorrectData has passed");
+            System.out.println(testName + " has passed");
         } else {
-            System.out.println("shouldClassifyIncorrectData has failed");
-            System.out.println("Expect: " + expectedResult + "Actual: " + actualResult);
+            System.out.println(testName + " has failed");
+            System.out.println("Expected: " + expectedResult + "Actual: " + actualResult);
         }
     }
 }

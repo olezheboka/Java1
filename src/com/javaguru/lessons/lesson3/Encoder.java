@@ -8,7 +8,6 @@ public class Encoder {
     public void encode() {
         char testChar = (char) code;
         System.out.println(code + " => " + testChar);
-
     }
 
     public void decode() {
