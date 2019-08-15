@@ -1,4 +1,4 @@
-package com.javaguru.lessons.lessson9.level2;
+package com.javaguru.lessons.lessson9.homework.level2;
 
 public class UniqueWordCounterDemo {
 

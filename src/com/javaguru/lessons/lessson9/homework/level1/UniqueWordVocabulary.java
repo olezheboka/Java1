@@ -1,4 +1,4 @@
-package com.javaguru.lessons.lessson9.level1;
+package com.javaguru.lessons.lessson9.homework.level1;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -15,12 +15,12 @@ public class UniqueWordVocabulary {
     }
 
     public int getWordsCount() {
-        System.out.println(words.size());
+        System.out.println("Number of unique words: " + words.size());
         return words.size();
     }
 
     public void printVocabulary() {
-        System.out.println(words);
+        System.out.println("Words in vocabulary: " + words);
     }
 
 }

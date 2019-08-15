@@ -1,4 +1,4 @@
-package com.javaguru.lessons.lessson9.level2;
+package com.javaguru.lessons.lessson9.homework.level2;
 
 
 import java.util.HashMap;
@@ -35,7 +35,7 @@ public class UniqueWordCounter {
     }
 
     void printWordsFrequency() {
-        System.out.println(words);
+        System.out.println("Words frequency: " + words);
     }
 
     @Override
