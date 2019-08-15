@@ -12,10 +12,14 @@ public class LibraryDemo {
         library.addBook(bookOne);
         library.addBook(bookTwo);
 
+        System.out.println(library);
+
         library.findByName("War and Peace");
         library.findByAuthor("Leo Tolstoy");
 
         library.deleteBook(bookTwo);
+
+        System.out.println(library);
 
     }
 

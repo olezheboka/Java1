@@ -16,27 +16,31 @@ public class Library {
         books.remove(bookToDelete);
     }
 
-    void findByName(String name) {
-        for (Book book : books) {
+    Book findByName(String name) {
 
+        for (Book book : books) {
             String currentBookName = book.getName();
             if (currentBookName == name) {
-                System.out.println(book);
-                break;
+                System.out.println("Book found by " + name + " is: " + book);
+                return book;
             }
         }
+        return null;
     }
 
 
-    void findByAuthor(String author) {
+    Book findByAuthor(String author) {
+
+        Book bookFoundByAuthor = books.get(0);
 
         for (Book book : books) {
-
             String currentBookAuthor = book.getAuthor();
             if (currentBookAuthor == author) {
-                System.out.println(book);
+                bookFoundByAuthor = book;
+                System.out.println("Book found by " + author + " is: " + book);
             }
         }
+        return bookFoundByAuthor;
 
     }
 

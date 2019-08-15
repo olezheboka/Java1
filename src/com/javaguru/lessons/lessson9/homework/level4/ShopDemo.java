@@ -24,7 +24,6 @@ public class ShopDemo {
         System.out.println(shop);
 
         shop.findProductByName("Apple");
-
         shop.findProductInRange(new BigDecimal("300.00"), new BigDecimal("76500.00"));
 
     }
