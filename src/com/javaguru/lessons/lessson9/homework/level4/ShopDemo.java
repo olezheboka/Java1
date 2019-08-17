@@ -19,7 +19,6 @@ public class ShopDemo {
         shop.addProduct(productThree);
 
 
-
         System.out.println(shop);
 
         shop.deleteProduct(productTwo);
