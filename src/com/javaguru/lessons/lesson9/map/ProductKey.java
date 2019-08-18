@@ -1,4 +1,4 @@
-package com.javaguru.lessons.lessson9.map;
+package com.javaguru.lessons.lesson9.map;
 
 import java.util.Objects;
 

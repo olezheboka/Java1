@@ -1,12 +1,12 @@
-package com.javaguru.lessons.lessson9;
+package com.javaguru.lessons.lesson9;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-public class ArrayListAddToStartBenchmark {
+public class LinkedListAddToStartBenchmark {
 
     public static void main(String[] args) {
-        List<Integer> integers = new ArrayList<>();
+        List<Integer> integers = new LinkedList<>();
 
         long start = System.currentTimeMillis();
 

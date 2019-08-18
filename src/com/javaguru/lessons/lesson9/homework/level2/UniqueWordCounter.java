@@ -1,4 +1,4 @@
-package com.javaguru.lessons.lessson9.homework.level2;
+package com.javaguru.lessons.lesson9.homework.level2;
 
 
 import java.util.HashMap;
