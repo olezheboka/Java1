@@ -1,14 +1,15 @@
-package com.javaguru.lessons.lesson10.level1;
+package com.javaguru.lessons.lesson10.homeworks.level1;
 
 public class UserValidationDemo {
 
     public static void main(String[] args) {
-        System.out.print("shouldThrowUserValidationException: ");
         UserValidationService service = new UserValidationService();
         User testUser = new User();
         testUser.setFirstName("Oleg");
         testUser.setLastName("Yaroshevich");
         testUser.setAge(30);
+
+        System.out.print("shouldThrowUserValidationException: ");
 
         try {
             service.validate(testUser);

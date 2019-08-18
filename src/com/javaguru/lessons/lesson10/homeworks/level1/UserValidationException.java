@@ -1,4 +1,4 @@
-package com.javaguru.lessons.lesson10.level1;
+package com.javaguru.lessons.lesson10.homeworks.level1;
 
 public class UserValidationException extends RuntimeException {
 
