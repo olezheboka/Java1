@@ -17,7 +17,7 @@ public class UserValidationServiceTest {
             System.out.println("FAIL, expected UserValidationException");
         } catch (UserValidationException e) {
             if (e.getMessage().equals("User name must be not null"))
-            System.out.println("SUCCESS");
+                System.out.println("SUCCESS");
             else {
                 System.out.println("FAIL, expected message: User name must be not null., actual message: " + e.getMessage());
             }
