@@ -22,7 +22,7 @@ public class Library {
 
         for (Book book : books) {
             String currentBookName = book.getName();
-            if (currentBookName == name) {
+            if (currentBookName.equals(name)) {
                 bookFoundByName = book;
             }
         }
@@ -36,7 +36,7 @@ public class Library {
 
         for (Book book : books) {
             String currentBookAuthor = book.getAuthor();
-            if (currentBookAuthor == author) {
+            if (currentBookAuthor.equals(author)) {
                 booksFoundByAuthor.add(book);
             }
         }

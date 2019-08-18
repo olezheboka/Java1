@@ -24,7 +24,7 @@ public class Shop {
 
         for (Product product : shop) {
             String currentProductName = product.getName();
-            if (currentProductName == name) {
+            if (currentProductName.equals(name)) {
                 productFoundByName = product;
             }
         }
