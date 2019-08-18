@@ -9,7 +9,7 @@ public class UniqueWordVocabulary {
 
 
     public void addWord(String word) {
-        if (word != "") {
+        if (!word.equals("")) {
             words.add(word);
         }
     }
