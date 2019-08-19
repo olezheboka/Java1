@@ -4,10 +4,11 @@ import java.util.Objects;
 
 public class Book {
 
-    String id;
-    String name;
-    String author;
-    int pagesCount;
+    private String id;
+    private String name;
+    private String author;
+    private int pagesCount;
+
 
     public Book(String id, String name, String author, int pagesCount) {
         this.id = id;
