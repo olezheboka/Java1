@@ -25,7 +25,7 @@ public class ShopDemo {
 
         System.out.println(shop);
 
-        Product productsFoundByName = shop.findProductByName("Apple");
+        String productsFoundByName = shop.findProductByName("BMW");
         System.out.println(productsFoundByName);
 
         List<Product> productsFoundInRange = shop.findProductInRange(new BigDecimal("300.00"), new BigDecimal("76500.00"));

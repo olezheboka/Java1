@@ -18,14 +18,14 @@ public class Shop {
         shop.remove(productToDelete);
     }
 
-    Product findProductByName(String name) {
+    String findProductByName(String name) {
 
-        Product productFoundByName = shop.get(0);
+        String productFoundByName = "No products found";
 
         for (Product product : shop) {
             String currentProductName = product.getName();
             if (currentProductName.equals(name)) {
-                productFoundByName = product;
+                productFoundByName = product.toString();
             }
         }
         return productFoundByName;

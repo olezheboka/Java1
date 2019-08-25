@@ -16,7 +16,7 @@ public class LibraryDemo {
 
         System.out.println(library);
 
-        Book productFoundByName = library.findByName("War and Peace");
+        String productFoundByName = library.findByName("Anna Karenina");
         System.out.println(productFoundByName);
 
         List<Book> productsFoundByAuthor = library.findByAuthor("Leo Tolstoy");
