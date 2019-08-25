@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class BookRepository implements Repository<Book> {
 
-    Map<String, Book> bookRepository = new HashMap<>();
+    private Map<String, Book> bookRepository = new HashMap<>();
 
     @Override
     public List<Book> findAll() {
