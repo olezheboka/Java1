@@ -16,14 +16,14 @@ public class Library {
         books.remove(bookToDelete);
     }
 
-    String findByName(String name) {
+    Book findByName(String name) {
 
-        String bookFoundByName = "No books found";
+        Book bookFoundByName = null;
 
         for (Book book : books) {
             String currentBookName = book.getName();
             if (currentBookName.equals(name)) {
-                bookFoundByName = book.toString();
+                bookFoundByName = book;
             }
         }
         return bookFoundByName;
